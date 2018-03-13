@@ -32,9 +32,21 @@ void Labyrinth::readFile()
 	std::ifstream fic;
 	std::string fileName;
 	std::string buffer("b");
-	std::cout << "Veuillez nous donner un nom de fichier." << std::endl;
-	std::cin >> fileName;
-	std::cout << std::endl;
+	bool isitopen = false;
+	while (!isitopen)
+    {
+        std::cout << "Veuillez nous donner un nom de fichier." << std::endl;
+        std::cin >> fileName;
+        std::cout << std::endl;
+        fic.open(fileName.c_str());
+        if(fic)
+        {
+            isitopen = true;
+            fic.close();
+        }
+
+    }
+
 
 	bool fin(false);
 	int compteurLigne(0);
