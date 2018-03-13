@@ -20,6 +20,7 @@ public:
 	void readFile();
 	void affichage();
 	void allocation();
+	void marking();
 };
 
 #endif // __LABYRINTH__

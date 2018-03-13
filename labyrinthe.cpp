@@ -194,3 +194,8 @@ void Labyrinth::allocation()
 	m_port = new Case*[m_hauteur];
 	for(int i(0); i < m_hauteur; i++) m_port[i] = new Case[m_largeur];
 }
+
+void Labyrinth::marking()
+{
+
+}
